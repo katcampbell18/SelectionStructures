@@ -1,0 +1,58 @@
+1. Process Customer Record
+
+declare String name;
+declare double amount;
+declare int tax_code;
+declare double total;
+declare double tax;
+
+input "Customer's name: " + name;
+input "Purchase amount: " + amount;
+input "Tax code: " + tax_code;
+
+//calculate total amount due 
+int tax_code = 3
+	switch(tax_code)
+		case 0:
+			tax = 0;
+			break;
+		case 1:
+			tax = 0.03;
+			break;
+		case 2:
+			tax = 0.05;
+			break;
+		case 3:
+			tax = 0.07;
+			break;
+	total = amount + (amount * tax);
+
+system.out.print(name, amount, tax, total);
+
+
+2. Calculate Employee's Pay
+
+declare long id;
+declare double rate;
+declare int hours;
+declare double pay;
+
+input "Employee id: " + id;
+input "Hourly rate: " + rate;
+input "Number of hours worked: " + hours;
+
+//calculate weekly pay
+if ((hours > 60) || ( rate > 25.00){
+	system.out.print("Unable to calculate weekly pay);
+	}
+	elif (35 < hours < 60){
+		pay = hours * (rate * 1.5);
+		}
+	else {
+		pay = hours * rate;
+			}
+	
+system.out.print("Employee id: " + id);
+system.out.print("Hourly rate: " + rate);
+system.out.print("Number of hours worked: " + hours);
+system.out.print("Weekly pay is " + pay);
